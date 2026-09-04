@@ -11,7 +11,7 @@ class TelemetryDataPoint:
     Represents a single telemetry data point from the rocket flight.
     Attributes:
         timestamp (int): The time in seconds since launch.
-        altitude (float): The altitude in meters.
+        altitude (float): The altitude in kilometers.
         temperature (float): The temperature in degrees Celsius.
         voltage (float): The battery voltage in volts.
         attitude (tuple): A tuple of three floats representing pitch, yaw, and roll in degrees
@@ -33,11 +33,13 @@ class TelemetryDataPoint:
             float: The vertical velocity in meters per second.
         """
 
+        # NOTE: altitude is stored in kilometers, so multiply altitude difference by 1000 to convert to meters for m/s velocity
+
         # TODO: look at last_data_point to get previous altitude and timestamp
 
         # TODO: calculate the difference in altitude and time
 
-        # TODO: divide the two numbers to get velocity
+        # TODO: multiply altitude difference by 1000 to convert km to m, then divide by time difference
 
         # TODO: ensure correct units!!
 

@@ -27,7 +27,7 @@ def main():
         print("No valid data points found.")
     else:
         print(
-            f"{'Timestamp':^12} | {'Altitude (m)':^12} | {'Temp (C)':^8} | {'Volts':^5} | {'Velocity (m/s)':^14} | {'Attitude (p,y,r)'}"
+            f"{'Timestamp':^12} | {'Altitude (km)':^13} | {'Temp (C)':^8} | {'Volts':^5} | {'Velocity (m/s)':^14} | {'Attitude (p,y,r)'}"
         )
 
     for dp in rocket_flight.data_points:

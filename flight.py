@@ -29,12 +29,15 @@ class RocketFlight:
 
         self.file_path = file_path
         self.flight_id = os.path.basename(file_path)
+        self.data_points = []
+        self.corrupt_points_count = 0
 
     def load_data(self):
         """
         Loads and processes the telemetry data from the file.
         """
         self.data_points = []
+        self.corrupt_points_count = 0
         pass
 
     def get_apogee(self):
