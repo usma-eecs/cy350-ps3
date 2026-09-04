@@ -1,0 +1,7 @@
+# SPEAR Hypersonic Rocket - Full Telemetry Log
+# Data format: timestamp,altitude_km,temp_c,voltage,pitch,yaw,roll
+
+1750000666,136.980,ERROR,3.89,22.0,0.8,260
+1750000748,148.329,315.7,UNDERVOLTAGE,6.0,-0.2,330
+1750000760,149.031,320.4,3.85,0.0
+1750000819,INVALID,288.7,3.80,-14.0,-1.0,50
